@@ -12,6 +12,7 @@ import org.forgerock.android.auth.callback.ChoiceCallbackTest;
 import org.forgerock.android.auth.callback.ConfirmationCallbackTest;
 import org.forgerock.android.auth.callback.ConsentMappingCallbackTest;
 import org.forgerock.android.auth.callback.DeviceProfileCallbackTest;
+import org.forgerock.android.auth.callback.DeviceProfileCollectorCallbackAndroidTest;
 import org.forgerock.android.auth.callback.HiddenValueCallbackTest;
 import org.forgerock.android.auth.callback.KbaCreateCallbackTest;
 import org.forgerock.android.auth.callback.NameCallbackTest;
@@ -36,7 +37,8 @@ import org.junit.runners.Suite;
         ConfirmationCallbackTest.class,
         ConsentMappingCallbackTest.class,
         DeviceProfileCallbackTest.class,
-        HiddenValueCallbackTest.class,
+        DeviceProfileCollectorCallbackAndroidTest.class,
+        // HiddenValueCallbackTest.class,
         KbaCreateCallbackTest.class,
         NameCallbackTest.class,
         NumberAttributeInputCallbackTest.class,
@@ -54,7 +56,13 @@ import org.junit.runners.Suite;
 
         //Developer Facing
         FRUserTest.class,
-        FRSessionTest.class
+        FRSessionTest.class,
+
+        AccountManagerTest.class,
+        DefaultSingleSignOnManagerTest.class,
+        DefaultTokenManagerTest.class,
+        FRDeviceProfileTest.class,
+        RootDeviceTest.class
 
 })
 public class IntegrationTestSuite {
